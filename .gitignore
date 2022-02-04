@@ -1,5 +1,6 @@
 .vscode/
 
+.tox/
 dist/
 build/
 .mypy_cache/
