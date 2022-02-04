@@ -1,0 +1,8 @@
+.vscode/
+
+dist/
+build/
+.mypy_cache/
+.pytest_cache/
+
+*.py[cow]

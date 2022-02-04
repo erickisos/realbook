@@ -1,0 +1,32 @@
+name: Code Quality Checks
+
+on:
+  push:
+    branches-ignore:
+      - "master"
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up Python 3.9
+        uses: actions/setup-python@v1
+        with:
+          python-version: 3.9
+      - name: Set up Poetry
+        uses: Gr1N/setup-poetry@v7
+      - name: Restoring cache
+        uses: actions/cache@v2
+        with:
+          path: ~/.cache/pypoetry/virtualenvs
+          key: ${{ runner.os }}-poetry-${{ hashFiles('pyproject.toml') }}
+      - name: Install dependencies
+        run: poetry update
+      - name: Unit & Coverage test
+        run: poetry run tox
+      - name: Check style with flake8
+        run: poetry run flake8 libs tests src
+      - name: Check format with black
+        run: poetry run black --check libs tests src
+      - name: Check type hinting with mypy
+        run: poetry run mypy libs tests src
