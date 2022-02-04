@@ -15,11 +15,12 @@ PySide6 = "^6.2.3"
 tox = "^3.24.5"
 mypy = "^0.931"
 black = "^22.1.0"
+isort = "^5.10.1"
 bandit = "^1.7.2"
+flake8 = "^4.0.1"
 pytest = "^6.2.5"
 pre-commit = "^2.17.0"
 hypothesis = {extras = ["zoneinfo"], version = "^6.36.1"}
-isort = "^5.10.1"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]

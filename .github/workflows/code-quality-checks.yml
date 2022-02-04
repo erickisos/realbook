@@ -24,11 +24,11 @@ jobs:
       - name: Install Dependencies
         if: steps.cache.outputs.cache-hit != 'true'
         run: poetry install
+      - name: Check style with flake8
+        run: poetry run flake8 tests src
+      - name: Check format with black
+        run: poetry run black --check tests src
+      - name: Check type hinting with mypy
+        run: poetry run mypy tests src
       - name: Unit & Coverage test
         run: poetry run tox
-      - name: Check style with flake8
-        run: poetry run flake8 libs tests src
-      - name: Check format with black
-        run: poetry run black --check libs tests src
-      - name: Check type hinting with mypy
-        run: poetry run mypy libs tests src
