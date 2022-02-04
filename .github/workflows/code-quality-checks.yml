@@ -3,7 +3,7 @@ name: Code Quality Checks
 on:
   push:
     branches-ignore:
-      - "master"
+      - "main"
 jobs:
   code-quality:
     runs-on: ubuntu-latest
