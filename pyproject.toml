@@ -3,18 +3,46 @@ name = "realbook"
 version = "0.1.0"
 description = "A simple program to create lead sheets as those found on the realbook"
 authors = ["Erick G. Islas-Osuna <erickisos653@gmail.com>"]
+packages = [
+    { include = "realbook", from = "src" }
+]
 
 [tool.poetry.dependencies]
-python = "^3.9"
+python = ">=3.9,<3.11"
 PySide6 = "^6.2.3"
 
 [tool.poetry.dev-dependencies]
-bandit = "^1.7.2"
-black = "^22.1.0"
-pytest = "^6.2.5"
-hypothesis = "^6.36.1"
+tox = "^3.24.5"
 mypy = "^0.931"
+black = "^22.1.0"
+isort = "^5.10.1"
+bandit = "^1.7.2"
+flake8 = "^4.0.1"
+pytest = "^6.2.5"
+pre-commit = "^2.17.0"
+hypothesis = {extras = ["zoneinfo"], version = "^6.36.1"}
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length=79
+skip-string-normalization = true
+target-version=['py39']
+experimental-string-processing = true
+exclude = '''
+/(
+    /.git
+  | /.mypy_cache
+  | buck-out
+  | build
+  | dist
+)/
+'''
+
+[tool.isort]
+profile = "black"
+
+[tool.mypy]
+ignore_missing_imports = true
