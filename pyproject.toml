@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "realbook"
+version = "0.1.0"
+description = "A simple program to create lead sheets as those found on the realbook"
+authors = ["Erick G. Islas-Osuna <erickisos653@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+PySide6 = "^6.2.3"
+
+[tool.poetry.dev-dependencies]
+bandit = "^1.7.2"
+black = "^22.1.0"
+pytest = "^6.2.5"
+hypothesis = "^6.36.1"
+mypy = "^0.931"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
