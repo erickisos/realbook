@@ -28,16 +28,16 @@ class MetronomeBackend(QObject):
     def current_tempo(self) -> Decimal:
         return self.__current_tempo
 
-    @property
-    def last_timestamp(self) -> Optional[Decimal]:
-        return self.__last_timestamp
-
     @current_tempo.setter
     def current_tempo(self, new_tempo: Decimal):
         if new_tempo > 20:
             self.__current_tempo += new_tempo
             self.__current_tempo /= Decimal('2')
             self.tempoUpdated.emit(int(self.__current_tempo))
+
+    @property
+    def last_timestamp(self) -> Optional[Decimal]:
+        return self.__last_timestamp
 
     @last_timestamp.setter
     def last_timestamp(self, timestamp: Decimal):
