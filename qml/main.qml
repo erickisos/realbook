@@ -8,21 +8,24 @@ ApplicationWindow {
     height: 640
     color: "white"
 
-    property string currentTime: "00: 00: 00"
-    property QtObject timeBackend
+    property string currentTempo: "90"
+    property QtObject metronomeBackend
 
-    Connections {
-        target: timeBackend
-        function onTimeUpdated(time)
-        {
-            currentTime = time
+    Text {
+        text: currentTempo
+
+        Connections {
+            target: metronomeBackend
+
+            function onTempoUpdated(tempo)
+            {
+                currentTempo = tempo
+            }
         }
     }
 
-
-    Text {
-        anchors.centerIn: parent
-        text: currentTime
-        font.pixelSize: 48
+    Button {
+        text: "Tap"
+        onClicked: metronomeBackend.tempoTapped()
     }
 }

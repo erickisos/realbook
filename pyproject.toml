@@ -30,7 +30,7 @@ build-backend = "poetry.core.masonry.api"
 line-length=79
 skip-string-normalization = true
 target-version=['py39']
-experimental-string-processing = true
+preview = true
 exclude = '''
 /(
     /.git
