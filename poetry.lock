@@ -97,6 +97,17 @@ optional = false
 python-versions = "*"
 
 [[package]]
+name = "exceptiongroup"
+version = "1.0.0rc8"
+description = "Backport of PEP 654 (exception groups)"
+category = "dev"
+optional = false
+python-versions = ">=3.7"
+
+[package.extras]
+test = ["pytest (>=6)"]
+
+[[package]]
 name = "filelock"
 version = "3.4.2"
 description = "A platform independent file lock."
@@ -145,7 +156,7 @@ gitdb = ">=4.0.1,<5"
 
 [[package]]
 name = "hypothesis"
-version = "6.46.9"
+version = "6.47.2"
 description = "A library for property-based testing"
 category = "dev"
 optional = false
@@ -153,6 +164,7 @@ python-versions = ">=3.7"
 
 [package.dependencies]
 attrs = ">=19.2.0"
+exceptiongroup = {version = ">=1.0.0rc8", markers = "python_version < \"3.11.0b1\""}
 sortedcontainers = ">=2.1.0,<3.0.0"
 tzdata = {version = ">=2022.1", optional = true, markers = "sys_platform == \"win32\" and extra == \"zoneinfo\""}
 
@@ -532,7 +544,7 @@ testing = ["coverage (>=4)", "coverage-enable-subprocess (>=1)", "flaky (>=3)", 
 [metadata]
 lock-version = "1.1"
 python-versions = ">=3.9,<3.11"
-content-hash = "c2170e20af607e64e759553f4925d3cb54a00ff6089eb525e96065c25a3960bf"
+content-hash = "82feb02e532cb772d7d0c61a7bbac6f0772c3a25c5e8edf18aa4c8b67d8a42f4"
 
 [metadata.files]
 atomicwrites = [
@@ -588,6 +600,10 @@ distlib = [
     {file = "distlib-0.3.4-py2.py3-none-any.whl", hash = "sha256:6564fe0a8f51e734df6333d08b8b94d4ea8ee6b99b5ed50613f731fd4089f34b"},
     {file = "distlib-0.3.4.zip", hash = "sha256:e4b58818180336dc9c529bfb9a0b58728ffc09ad92027a3f30b7cd91e3458579"},
 ]
+exceptiongroup = [
+    {file = "exceptiongroup-1.0.0rc8-py3-none-any.whl", hash = "sha256:ab0a968e1ef769e55d9a596f4a89f7be9ffedbc9fdefdb77cc68cf5c33ce1035"},
+    {file = "exceptiongroup-1.0.0rc8.tar.gz", hash = "sha256:6990c24f06b8d33c8065cfe43e5e8a4bfa384e0358be036af9cc60b6321bd11a"},
+]
 filelock = [
     {file = "filelock-3.4.2-py3-none-any.whl", hash = "sha256:cf0fc6a2f8d26bd900f19bf33915ca70ba4dd8c56903eeb14e1e7a2fd7590146"},
     {file = "filelock-3.4.2.tar.gz", hash = "sha256:38b4f4c989f9d06d44524df1b24bd19e167d851f19b50bf3e3559952dddc5b80"},
@@ -605,8 +621,8 @@ gitpython = [
     {file = "GitPython-3.1.26.tar.gz", hash = "sha256:fc8868f63a2e6d268fb25f481995ba185a85a66fcad126f039323ff6635669ee"},
 ]
 hypothesis = [
-    {file = "hypothesis-6.46.9-py3-none-any.whl", hash = "sha256:5a9629e10700e5c93f761fa310baf127f36f8a9e179e7dae087aeb22b3d1f535"},
-    {file = "hypothesis-6.46.9.tar.gz", hash = "sha256:8b1349dab58cf9bc85687e2721c008e99f23a32fb70e688779c81b0298904160"},
+    {file = "hypothesis-6.47.2-py3-none-any.whl", hash = "sha256:d6a7bb1b695edc57388b86960138d23aeddcb95192cff49755e280e3296558c9"},
+    {file = "hypothesis-6.47.2.tar.gz", hash = "sha256:9c01a225eada7d74d38430e3e91e659e3a892fbc2b15f7b051779ded6ab73ee7"},
 ]
 identify = [
     {file = "identify-2.4.8-py2.py3-none-any.whl", hash = "sha256:a55bdd671b6063eb837af938c250ec00bba6e610454265133b0d2db7ae718d0f"},
