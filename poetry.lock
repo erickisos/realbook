@@ -487,7 +487,7 @@ python-versions = ">=3.7"
 
 [[package]]
 name = "tox"
-version = "3.25.0"
+version = "3.25.1"
 description = "tox is a generic virtualenv management and test command line tool"
 category = "dev"
 optional = false
@@ -544,7 +544,7 @@ testing = ["coverage (>=4)", "coverage-enable-subprocess (>=1)", "flaky (>=3)", 
 [metadata]
 lock-version = "1.1"
 python-versions = ">=3.9,<3.11"
-content-hash = "f804f1794e282260f038f0d842f392bb9fa3f44d953f184a2bbff4e4e12ee425"
+content-hash = "9f46fb83d01c4078084d1e0e2d8da6833724f3ceef65fff844ba8fc5d72764fb"
 
 [metadata.files]
 atomicwrites = [
@@ -797,8 +797,8 @@ tomli = [
     {file = "tomli-2.0.0.tar.gz", hash = "sha256:c292c34f58502a1eb2bbb9f5bbc9a5ebc37bee10ffb8c2d6bbdfa8eb13cc14e1"},
 ]
 tox = [
-    {file = "tox-3.25.0-py2.py3-none-any.whl", hash = "sha256:0805727eb4d6b049de304977dfc9ce315a1938e6619c3ab9f38682bb04662a5a"},
-    {file = "tox-3.25.0.tar.gz", hash = "sha256:37888f3092aa4e9f835fc8cc6dadbaaa0782651c41ef359e3a5743fcb0308160"},
+    {file = "tox-3.25.1-py2.py3-none-any.whl", hash = "sha256:c38e15f4733683a9cc0129fba078633e07eb0961f550a010ada879e95fb32632"},
+    {file = "tox-3.25.1.tar.gz", hash = "sha256:c138327815f53bc6da4fe56baec5f25f00622ae69ef3fe4e1e385720e22486f9"},
 ]
 typing-extensions = [
     {file = "typing_extensions-4.0.1-py3-none-any.whl", hash = "sha256:7f001e5ac290a0c0401508864c7ec868be4e701886d5b573a9528ed3973d9d3b"},
