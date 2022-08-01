@@ -156,7 +156,7 @@ gitdb = ">=4.0.1,<5"
 
 [[package]]
 name = "hypothesis"
-version = "6.52.4"
+version = "6.53.0"
 description = "A library for property-based testing"
 category = "dev"
 optional = false
@@ -169,7 +169,7 @@ sortedcontainers = ">=2.1.0,<3.0.0"
 tzdata = {version = ">=2022.1", optional = true, markers = "sys_platform == \"win32\" and extra == \"zoneinfo\""}
 
 [package.extras]
-all = ["black (>=19.10b0)", "click (>=7.0)", "django (>=2.2)", "dpcontracts (>=0.4)", "lark-parser (>=0.6.5)", "libcst (>=0.3.16)", "numpy (>=1.9.0)", "pandas (>=0.25)", "pytest (>=4.6)", "python-dateutil (>=1.4)", "pytz (>=2014.1)", "redis (>=3.0.0)", "rich (>=9.0.0)", "importlib-metadata (>=3.6)", "backports.zoneinfo (>=0.2.1)", "tzdata (>=2022.1)"]
+all = ["black (>=19.10b0)", "click (>=7.0)", "django (>=2.2)", "dpcontracts (>=0.4)", "lark-parser (>=0.6.5)", "libcst (>=0.3.16)", "numpy (>=1.9.0)", "pandas (>=1.0)", "pytest (>=4.6)", "python-dateutil (>=1.4)", "pytz (>=2014.1)", "redis (>=3.0.0)", "rich (>=9.0.0)", "importlib-metadata (>=3.6)", "backports.zoneinfo (>=0.2.1)", "tzdata (>=2022.1)"]
 cli = ["click (>=7.0)", "black (>=19.10b0)", "rich (>=9.0.0)"]
 codemods = ["libcst (>=0.3.16)"]
 dateutil = ["python-dateutil (>=1.4)"]
@@ -178,7 +178,7 @@ dpcontracts = ["dpcontracts (>=0.4)"]
 ghostwriter = ["black (>=19.10b0)"]
 lark = ["lark-parser (>=0.6.5)"]
 numpy = ["numpy (>=1.9.0)"]
-pandas = ["pandas (>=0.25)"]
+pandas = ["pandas (>=1.0)"]
 pytest = ["pytest (>=4.6)"]
 pytz = ["pytz (>=2014.1)"]
 redis = ["redis (>=3.0.0)"]
@@ -544,7 +544,7 @@ testing = ["coverage (>=4)", "coverage-enable-subprocess (>=1)", "flaky (>=3)", 
 [metadata]
 lock-version = "1.1"
 python-versions = ">=3.9,<3.11"
-content-hash = "1fd203b97280194fb4f745745ea07350c02a0242963bf8991774b3eafaad424e"
+content-hash = "d06f7731c52e6fea706426c713fc1d675a2647947250b6faf77e44798a2931e3"
 
 [metadata.files]
 atomicwrites = [
@@ -621,8 +621,8 @@ gitpython = [
     {file = "GitPython-3.1.26.tar.gz", hash = "sha256:fc8868f63a2e6d268fb25f481995ba185a85a66fcad126f039323ff6635669ee"},
 ]
 hypothesis = [
-    {file = "hypothesis-6.52.4-py3-none-any.whl", hash = "sha256:9e5da519958099586d4d44267a87fb83fe127ac6bafae4ecccfe2598c78d37fe"},
-    {file = "hypothesis-6.52.4.tar.gz", hash = "sha256:2af2f03cf49d44e2f8df916d46af6f9a0beeb2ca4c936512a6af0d61f4690772"},
+    {file = "hypothesis-6.53.0-py3-none-any.whl", hash = "sha256:9c2b073731010cc00bcf060e71bd8f9507f6fe8f6d173f454634d1b91c537412"},
+    {file = "hypothesis-6.53.0.tar.gz", hash = "sha256:39f225530c28fe484a59c39839c8a2fb414f2ecfd4743f75d82f55e0f09268c0"},
 ]
 identify = [
     {file = "identify-2.4.8-py2.py3-none-any.whl", hash = "sha256:a55bdd671b6063eb837af938c250ec00bba6e610454265133b0d2db7ae718d0f"},
