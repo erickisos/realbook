@@ -17,7 +17,7 @@ mypy = "^0.971"
 black = "^22.6.0"
 isort = "^5.10.1"
 bandit = "^1.7.4"
-flake8 = "^5.0.2"
+flake8 = "^5.0.4"
 pytest = "^7.1.2"
 pre-commit = "^2.20.0"
 hypothesis = {extras = ["zoneinfo"], version = "^6.54.1"}
