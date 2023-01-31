@@ -232,14 +232,14 @@ gitdb = ">=4.0.1,<5"
 
 [[package]]
 name = "hypothesis"
-version = "6.65.0"
+version = "6.65.2"
 description = "A library for property-based testing"
 category = "dev"
 optional = false
 python-versions = ">=3.7"
 files = [
-    {file = "hypothesis-6.65.0-py3-none-any.whl", hash = "sha256:24e3219b0b181414c06bb7a62649a6edb471f148d25c9c9687f47505b0f50b1c"},
-    {file = "hypothesis-6.65.0.tar.gz", hash = "sha256:d25914dd4008b0292d116ac315f01f6691c5460c494a0291c01d96f4bc17fe68"},
+    {file = "hypothesis-6.65.2-py3-none-any.whl", hash = "sha256:26c52473a526b31672d97f88be0b7ac134f0ea180737c71ada2a4d82ad175e92"},
+    {file = "hypothesis-6.65.2.tar.gz", hash = "sha256:821279f05fad38575271be3fdfff1e22232613f3d21b3fc991d735057f9b5b47"},
 ]
 
 [package.dependencies]
@@ -804,4 +804,4 @@ testing = ["coverage (>=6.2)", "coverage-enable-subprocess (>=1)", "flaky (>=3.7
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.9,<3.11"
-content-hash = "b6a28f1f837edb938a7dfa05dfadc1a58bb4cc8ef0c623a5225e3700902d3094"
+content-hash = "74056bafceb452afc42e959a1ce8cf8ea3b0d186fc7ad59f8409c01894e23160"
