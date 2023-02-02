@@ -19,6 +19,7 @@ def main():
     if not engine.rootObjects():
         sys.exit(-1)
 
+    time_backend.update_time()
     sys.exit(app.exec())
 
 
