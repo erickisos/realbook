@@ -13,7 +13,7 @@ PySide6 = "^6.4.2"
 
 [tool.poetry.dev-dependencies]
 tox = "^4.4.4"
-mypy = "^0.991"
+mypy = "^1.0"
 black = "^23.1.0"
 isort = "^5.12.0"
 bandit = "^1.7.4"
