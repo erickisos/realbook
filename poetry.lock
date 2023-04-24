@@ -247,24 +247,24 @@ gitdb = ">=4.0.1,<5"
 
 [[package]]
 name = "hypothesis"
-version = "6.70.0"
+version = "6.72.1"
 description = "A library for property-based testing"
 category = "dev"
 optional = false
 python-versions = ">=3.7"
 files = [
-    {file = "hypothesis-6.70.0-py3-none-any.whl", hash = "sha256:be395f71d6337a5e8ed2f695c568360a686056c3b00c98bd818874c674b24586"},
-    {file = "hypothesis-6.70.0.tar.gz", hash = "sha256:f5cae09417d0ffc7711f602cdcfa3b7baf344597a672a84658186605b04f4a4f"},
+    {file = "hypothesis-6.72.1-py3-none-any.whl", hash = "sha256:1901688aac1fc8d78d5431c4a1d48cc50940e247dd8b6ebc3d4167ef31204e10"},
+    {file = "hypothesis-6.72.1.tar.gz", hash = "sha256:2fd2c9640ea4b64d06fafc8d9aa8e9cbae365879d109a859afd37dda5c1ffb55"},
 ]
 
 [package.dependencies]
 attrs = ">=19.2.0"
 exceptiongroup = {version = ">=1.0.0", markers = "python_version < \"3.11\""}
 sortedcontainers = ">=2.1.0,<3.0.0"
-tzdata = {version = ">=2022.7", optional = true, markers = "sys_platform == \"win32\" and extra == \"zoneinfo\""}
+tzdata = {version = ">=2023.3", optional = true, markers = "sys_platform == \"win32\" and extra == \"zoneinfo\""}
 
 [package.extras]
-all = ["backports.zoneinfo (>=0.2.1)", "black (>=19.10b0)", "click (>=7.0)", "django (>=3.2)", "dpcontracts (>=0.4)", "importlib-metadata (>=3.6)", "lark (>=0.10.1)", "libcst (>=0.3.16)", "numpy (>=1.9.0)", "pandas (>=1.0)", "pytest (>=4.6)", "python-dateutil (>=1.4)", "pytz (>=2014.1)", "redis (>=3.0.0)", "rich (>=9.0.0)", "tzdata (>=2022.7)"]
+all = ["backports.zoneinfo (>=0.2.1)", "black (>=19.10b0)", "click (>=7.0)", "django (>=3.2)", "dpcontracts (>=0.4)", "importlib-metadata (>=3.6)", "lark (>=0.10.1)", "libcst (>=0.3.16)", "numpy (>=1.9.0)", "pandas (>=1.0)", "pytest (>=4.6)", "python-dateutil (>=1.4)", "pytz (>=2014.1)", "redis (>=3.0.0)", "rich (>=9.0.0)", "tzdata (>=2023.3)"]
 cli = ["black (>=19.10b0)", "click (>=7.0)", "rich (>=9.0.0)"]
 codemods = ["libcst (>=0.3.16)"]
 dateutil = ["python-dateutil (>=1.4)"]
@@ -277,7 +277,7 @@ pandas = ["pandas (>=1.0)"]
 pytest = ["pytest (>=4.6)"]
 pytz = ["pytz (>=2014.1)"]
 redis = ["redis (>=3.0.0)"]
-zoneinfo = ["backports.zoneinfo (>=0.2.1)", "tzdata (>=2022.7)"]
+zoneinfo = ["backports.zoneinfo (>=0.2.1)", "tzdata (>=2023.3)"]
 
 [[package]]
 name = "identify"
@@ -852,14 +852,14 @@ files = [
 
 [[package]]
 name = "tzdata"
-version = "2022.7"
+version = "2023.3"
 description = "Provider of IANA time zone data"
 category = "dev"
 optional = false
 python-versions = ">=2"
 files = [
-    {file = "tzdata-2022.7-py2.py3-none-any.whl", hash = "sha256:2b88858b0e3120792a3c0635c23daf36a7d7eeeca657c323da299d2094402a0d"},
-    {file = "tzdata-2022.7.tar.gz", hash = "sha256:fe5f866eddd8b96e9fcba978f8e503c909b19ea7efda11e52e39494bad3a7bfa"},
+    {file = "tzdata-2023.3-py2.py3-none-any.whl", hash = "sha256:7e65763eef3120314099b6939b5546db7adce1e7d6f2e179e3df563c70511eda"},
+    {file = "tzdata-2023.3.tar.gz", hash = "sha256:11ef1e08e54acb0d4f95bdb1be05da659673de4acbd21bf9c69e94cc5e907a3a"},
 ]
 
 [[package]]
@@ -886,4 +886,4 @@ test = ["covdefaults (>=2.3)", "coverage (>=7.2.3)", "coverage-enable-subprocess
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.9,<3.11"
-content-hash = "42aa102000e40ecd88c4f8b1836dc1efd4a1646b3a27f73568aee9fd9d64683b"
+content-hash = "c6d14b6fd5f2dfb230c0a2d95484ed15fce7e5b5aa85baad322b9062ea538d4c"
