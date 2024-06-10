@@ -20,7 +20,7 @@ bandit = "^1.7.5"
 flake8 = "^7.0.0"
 pytest = "^8.2.1"
 pre-commit = "^3.7.1"
-hypothesis = {extras = ["zoneinfo"], version = "^6.103.0"}
+hypothesis = {extras = ["zoneinfo"], version = "^6.103.1"}
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
