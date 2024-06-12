@@ -18,7 +18,7 @@ black = "^24.4.2"
 isort = "^5.13.2"
 bandit = "^1.7.8"
 flake8 = "^7.0.0"
-pytest = "^8.2.1"
+pytest = "^8.2.2"
 pre-commit = "^3.7.1"
 hypothesis = {extras = ["zoneinfo"], version = "^6.103.1"}
 
