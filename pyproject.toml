@@ -19,7 +19,7 @@ isort = "^5.13.2"
 bandit = "^1.7.9"
 flake8 = "^7.1.0"
 pytest = "^8.3.2"
-pre-commit = "^3.7.1"
+pre-commit = "^3.8.0"
 hypothesis = {extras = ["zoneinfo"], version = "^6.108.2"}
 
 [build-system]
